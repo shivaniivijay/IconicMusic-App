@@ -1,0 +1,154 @@
+/* styles.css */
+
+#cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: rgb(33, 31, 33);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+.card-content {
+  padding: 16px;
+  flex-grow: 1;
+  font-style: Italic;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+}
+
+.card p {
+  margin: 8px 0;
+}
+
+.card time,
+.card span {
+  display: block;
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  #cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+#menu a,
+#menu button {
+  padding: 10px 20px;
+  background-color: #c39623;
+  border-radius: 5px;
+
+  color: #ffffff;
+  font-style: italic;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#menu a:hover,
+#menu button:hover {
+  background-color: #ac6dc7;
+}
+
+/* Newsletter Form Styles */
+footer {
+  background-color: #ccb03e;
+  padding: 20px;
+  text-align: center;
+}
+
+#newsletter-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+#newsletter-form button {
+  background-color: #576ddd;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#request-artist-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+textarea,
+select {
+  background-color: #e3e5ec;
+  color: rgb(54, 52, 52);
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #fdfdfd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #e1c143;
+  color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b09a38;
+}
+
+#social-media-urls,
+#song-video-urls {
+  margin-top: 10px;
+}
+
+.url-input {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.url-input input {
+  flex-grow: 1;
+  margin-right: 10px;
+}
