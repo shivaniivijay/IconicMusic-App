@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Request New Artist - Music App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Music App</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="request-artist.html">Request Artist</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Request a New Artist</h2>
+      <form id="request-artist-form" action="https://httpbin.org/post" method="post">
+        <div class="form-group">
+          <label for="artist-name">Artist's Name:</label>
+          <input type="text" id="artist-name" name="artist-name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="genre">Music Genre:</label>
+          <input list="genres" id="genre" name="genre" required />
+          <datalist id="genres">
+            <option value="Pop"></option>
+            <option value="Rock"></option>
+            <option value="Hip Hop"></option>
+            <option value="R&B"></option>
+            <option value="Country"></option>
+            <option value="Electronic"></option>
+            <option value="Jazz"></option>
+            <option value="Classical"></option>
+            <option value="Folk"></option>
+            <option value="Blues"></option>
+          </datalist>
+        </div>
+
+        <div class="form-group">
+          <label>Social Media URLs:</label>
+          <div id="social-media-urls"></div>
+          <button type="button" id="add-social-url">Add Social Media URL</button>
+        </div>
+
+        <div class="form-group">
+          <label>Song/Video URLs:</label>
+          <div id="song-video-urls"></div>
+          <button type="button" id="add-song-url">Add Song/Video URL</button>
+        </div>
+
+        <div class="form-group">
+          <label for="explicit">
+            <input type="checkbox" id="explicit" name="explicit" />
+            Contains explicit lyrics
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Why should this artist be added?</label>
+          <textarea id="description" name="description" required></textarea>
+        </div>
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Music App. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
