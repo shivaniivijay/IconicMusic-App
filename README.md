@@ -14,7 +14,7 @@ The app is designed with responsive web design in mind, ensuring usability acros
 
 - Responsive Design: Ensured the app layout adapts to different screen sizes, offering a consistent user experience on both desktop and mobile devices.
 
-- HTML Forms: Created multiple forms (newsletter sign-up and artist request) with validation, dynamic fields, and proper use of HTML elements like <input>, <textarea>, <datalist>, and <checkbox>.
+- HTML Forms: Created multiple forms (newsletter sign-up and artist request) with validation, dynamic fields, and proper use of HTML elements like <input>, <textarea>, datalist, and checkbox.
 
 - API Simulation: Integrated mock server for simulating POST requests to handle form submissions, providing a realistic experience of data interaction.
 
