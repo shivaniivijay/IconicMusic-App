@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Shivani Vijay" />
+    <title>WEB222 Music App</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/kimeiga/bahunya/dist/bahunya.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>IconicMusic</h1>
+      <p>Hear the Hits of Michael Jackson, BTS, and Taylor Swift!</p>
+      <p><i>Michael Jackson: King of Pop🎸</i></p>
+      <p><i>BTS: Global Superstars💜</i></p>
+      <p><i>Taylor Swift: Songwriting Phenomenon🎶</i></p>
+    </header>
+
+    <nav id="menu">
+      <!-- This will be dynamically populated by JavaScript -->
+    </nav>
+
+    <main>
+      <h2 id="selected-artist">
+        <!-- This will be dynamically updated by JavaScript -->
+      </h2>
+
+      <div id="cards-container">
+        <!-- This will be dynamically populated by JavaScript -->
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 IconicMusic. All rights reserved.</p>
+    </footer>
+
+    <footer>
+      <form id="newsletter-form" action="https://httpbin.org/post" method="post">
+        <h3>Subscribe to Our Newsletter</h3>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <button type="submit">Subscribe</button>
+      </form>
+    </footer>
+
+    <!-- JavaScript Data Files -->
+    <script src="./js/artists.js"></script>
+    <script src="./js/songs.js"></script>
+    <li><a href="request-artist.html">Request Artist</a></li>
+    <!-- Main App JavaScript File -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
